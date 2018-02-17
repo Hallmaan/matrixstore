@@ -1,0 +1,35 @@
+ROLE : 
+
+USER = 1 
+ADMIN = 2 
+SUPPLIER = 3 
+
+
+LANGKAH APLIKASI = 
+
+User : 
+
+- Mendaftarkan user [ REGISTRASI ]
+- Menjalankan Transaksi
+- memilih type toko
+- memilih supplier dengan status TRUE
+- memunculkan record dari type toko berdasarkan data supplier tersebut
+- melakukan order
+- muncul di view transaksi [ customer ] dan pending di view transaksi [ supplier ]
+- Menunggu Verifikasi dari supplier
+- Setelah diterima oleh supplier maka akan muncul di view transaksi user tersebut.
+
+Supplier : 
+- Mendafarkan supplier [ JOIN SUPPLIER ] [ AUTO GENERATE SUPPLIER CODE ]
+- Menunggu akses dari admin
+- Menambah product [ STATUS = TRUE JIKA INGIN DIMUNCULKAN ] [ AUTO GENERATE PRODUCT CODE ]
+- Cek transaksi dari user/customer [ MANAGE TRANSACTION [ VIEW TRANSACTION ] ] Accept apabila diterima.
+- Jika di accept stok berkurang 1, dan bertambah 1 kembali apabila transaksi sukses di delete/dicancel
+- Kita status true maka akan muncul di table transaction successfully
+
+admin : 
+- Memberi akses kepada supplier [ Manage supplier ] Jika supplier tidak di accept / belum maka si supplier dapat login
+namun tidak bisa menambahkan product
+- bisa melihat transaksi apa saja yang sudah berhasil
+- admin juga bisa melakukan transaksi
+
